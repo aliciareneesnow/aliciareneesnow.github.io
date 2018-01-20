@@ -1,0 +1,47 @@
+* { margin: 0; box-sizing: border-box; } 
+
+body { 
+    font-size: 16px; 
+    line-height: 32px;
+    font-family: Verdana, Geneva, sans-serif;
+    color: dimgray;
+}
+
+h1 {
+    font-size: 2rem;
+    color: whitesmoke;
+    background-color: darkseagreen;
+    margin: 1rem auto;
+    padding: 1rem auto;
+    max-width: 1200px;
+    text-align:center;
+}
+
+h2 {
+    font-size: 1.5rem;
+    text-align: left;
+    border-bottom: 2px solid #bbb;
+}
+
+header, main, footer {
+    margin: 5rem auto;
+    padding: 2rem auto;
+    max-width: 1200px;
+}
+
+header, footer, footer a {
+    text-align: center;
+    background-color: darkseagreen;
+    color: whitesmoke;
+}
+
+img {
+    width: 500;
+    height: auto;
+    float: right;
+    margin-right: 85px;
+}
+
+footer {
+    font-size: 1rem;
+}
