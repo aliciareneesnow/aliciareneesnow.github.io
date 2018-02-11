@@ -83,19 +83,17 @@ main {
     clear: right;
 }  
 main figure img {
-    display: inline-block;
-    width: 60%; 
+    display: inline-block; 
     float:left;
     clear: right;
     padding: 10px;
+    width: 60%;
 }
 h2 {
     display: inline-block;
-    line-height: .5;
     float: left;
     clear: right;
     margin: 0 1.5%;
-    width: 50%;
     margin-top: 20px;
 }
 section {
@@ -109,12 +107,10 @@ section.summary {
     border: 2px solid #242a40;
     float: right;
     margin: 0 1.5%;
-    width: 40%;
     padding: 5px;
 }
 section.forecast { 
     display: inline-block;
-    clear:right;
 }
 table, th, td {
     border: 1px solid black;
