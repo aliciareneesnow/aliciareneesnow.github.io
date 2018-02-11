@@ -1,0 +1,174 @@
+@media only screen and (min-width: 64em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+  
+article p.town-article img { 
+      width: 29.333%; 
+}
+body {
+    font-size: 16px;
+    font-family: 'Open Sans';
+}
+header, nav, main, footer {
+    max-width: 1425px;
+}
+header {    
+    margin: 0px auto;
+    padding: 6px;
+    text-align: center;
+    background-color: #242a40;
+}
+header h1 {
+    font-size: 30px;
+    line-height: .5;
+    color: #a1b1be;
+    font-family: 'Arvo';
+}
+header img {
+    max-height: 40%;
+    margin: 0 0;
+}
+header .subheading {
+    font-size: 14px;
+    color:#a1b1be;
+    font-family: 'Open Sans';
+}
+nav {
+    clear: both;
+    border-top: 2px solid #a1b1be;
+    align-content: center;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #242a40;
+}
+nav ul li {
+    display:inline-block;
+    text-align:center;
+    margin-left: 60px;
+}
+nav ul li a {
+    display: block;
+    color: #a1b1be;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+}
+nav ul li.active a {
+    background: #2f354e;
+}
+nav ul li a:hover {
+    background-color: #90a2b3;
+}
+h2, h3 {
+    display: inline-block;
+    font-size: 20px;
+    color: #242a40;
+    font-family: 'Arvo'; 
+}
+main {
+    display: inline-block;
+    padding:30px;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    color: #242a40;
+    margin-left: 100px;
+}
+ main figure { 
+    margin: 0 0; width:80%;
+    display: inline-block;
+    float:left;
+    clear: right;
+}  
+main figure img {
+    display: inline-block;
+    width: 60%; 
+    float:left;
+    clear: right;
+    padding: 10px;
+}
+h2 {
+    display: inline-block;
+    line-height: .5;
+    float: left;
+    clear: right;
+    margin: 0 1.5%;
+    width: 50%;
+    margin-top: 20px;
+}
+section {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    color: #242a40;
+}
+section.summary {
+    text-align: center;
+    display: inline-block;
+    border: 2px solid #242a40;
+    float: right;
+    margin: 0 1.5%;
+    width: 40%;
+    padding: 5px;
+}
+section.forecast { 
+    display: inline-block;
+    clear:right;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+h5 {
+    float: left;
+    clear: right;
+    display: inline-block;
+    font-size: 20px;
+    color: #242a40;
+    font-family: 'Arvo'; 
+}
+table {
+    display: inline-block;
+    padding: 5px;
+    float: right;
+    clear: left;
+    background-color: #242a40;
+    color: #a1b1be;
+}
+h4 {
+    font-family: Arvo;
+    text-align: center;
+    font-size: 16.5px;
+    color: #242a40;
+}
+article {
+    text-align: left;
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: #242a40;
+    margin: 10px;
+    padding: 10px;
+    max-width: 900px;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    line-height: 1.5;
+}
+article p.town-article img {
+    float: left;
+    padding-right: 10px;
+    width: 300px;
+    margin: 0px;
+}
+footer {
+    font-size: 14px;
+    font-family: 'Open Sans';
+    line-height: 1.5;
+    background-color: #242a40;
+    color: #a1b1be;
+    text-align: center;
+    clear: both;
+}
+footer aside {
+    font-size:16px;
+}

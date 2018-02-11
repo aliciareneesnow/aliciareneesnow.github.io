@@ -1,0 +1,106 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+body {
+    font-size: 16px;
+    font-family: 'Open Sans';
+}
+header, nav, main, footer {
+    max-width: 1025px;
+}
+header {    
+    margin: 1px auto;
+    padding: 0;
+    text-align: center;
+}
+header h1 {
+    font-size: 30px;
+    color: #a1b1be;
+    font-family: 'Arvo';
+}
+header img {
+    max-height: 30%;
+    margin: 0 0;
+}
+header .subheading {
+    font-size: 14px;
+    color:#a1b1be;
+    font-family: 'Open Sans';
+}
+nav {
+    align-content: center;
+}
+nav button {
+    align-content: center;
+}
+nav ul {
+     list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #242a40;
+}
+nav ul li {
+    display:inline-block;
+    text-align:center;
+}
+nav ul li a {
+    display: block;
+    color: #a1b1be;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav ul li.active a {}
+nav ul li a:hover {
+    background-color: #a1b1be;
+}
+h2, h3 {
+    font-size: 20px;
+    color: #242a40;
+    font-family: 'Arvo'; 
+}
+main {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    color: #242a40;
+}
+main figure { 
+    margin: 0 0 .2rem 2%; width:96%; 
+}
+main figure img { 
+    width: 90%; 
+}
+section.forecast { 
+    display:none; 
+}
+h4 {
+    font-family: Arvo;
+    font-size: 16.5px;
+    color: #242a40;
+}
+article {
+    align-content: center;
+    text-align: left;
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: #242a40;
+    padding: 12px;
+    max-width: 350px;
+    margin: 12px;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    line-height: 1.5;
+}
+article p.town-article img {
+    width: 320px; /* fill the page in the small/phone view */
+    margin: 0;
+}
+footer {
+    font-size: 12px;
+    font-family: 'Open Sans';
+    line-height: 1.5;
+}
+footer aside {
+    font-size:16px;
+}
+/* Other Class Selectors */
