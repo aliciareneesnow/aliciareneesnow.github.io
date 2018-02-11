@@ -3,14 +3,17 @@
 body {
     font-size: 16px;
     font-family: 'Open Sans';
+    text-align: center;
 }
 header, nav, main, footer {
-    max-width: 1025px;
+    max-width: 1350px;
 }
-header {    
+header, footer {    
     margin: 0;
     padding: 0;
     text-align: center;
+    background: #242a40;
+    color: #a1b1be;
 }
 header h1 {
     font-size: 14px;
@@ -25,12 +28,8 @@ header .subheading {
     color:#a1b1be;
     font-family: 'Open Sans';
 }
-nav {
-    align-content: center;
-}
-nav button {
-    align-content: center;
-}
+nav {}
+nav button {}
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -39,38 +38,36 @@ nav ul {
     background-color: #242a40;
 }
 nav ul li {
-    display:inline-block;
     text-align:center;
 }
 nav ul li a {
     display: block;
     color: #a1b1be;
-    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
-nav ul li.active a {}
+nav ul li.active a {
+    background: #2f354e;
+}
 nav ul li a:hover {
     background-color: #a1b1be;
+}
+main {
+    font-family: 'Open Sans';
+    font-size: 15px;
+    color: #242a40;
+    align-content: center;
 }
 h2, h3 {
     font-size: 18px;
     color: #242a40;
     font-family: 'Arvo'; 
 }
-main {
-    font-family: 'Open Sans';
-    font-size: 16px;
-    color: #242a40;
-    align-content: center;
-}
 main figure { 
     margin: 0 0 .2rem 2%; width:100%; 
-    align-content: center;
-    width: 100%;
 }
 main figure img { 
-    width: 100%; 
+    width: 90%; 
 }
 section.summary {
     text-align: center;
@@ -80,8 +77,11 @@ section.summary {
     padding: 0;
     align-content: center;
 }
+section h6 {
+    display: none;
+}
 section.forecast { 
-    display:none!important!; 
+    display:none; 
 h4 {
     font-family: Arvo;
     font-size: 16.5px;
@@ -89,25 +89,26 @@ h4 {
 }
 article {
     align-content: center;
-    text-align: left;
+    text-align: center;
     border-style: solid;
     border-width: 1.5px;
     border-color: #242a40;
-    padding: 12px;
+    padding:10px;
     max-width: 340px;
-    margin: 12px;
+    margin-bottom: 20px;
     font-family: 'Open Sans';
     font-size: 15px;
     line-height: 1.5;
+    overflow: hidden;
 }
 article p.town-article img {
-    width: 320px; /* fill the page in the small/phone view */
-    margin: 0;
+    width: 340px; /* fill the page in the small/phone view */
 }
 footer {
-    font-size: 12px;
+    font-size: 14px;
     font-family: 'Open Sans';
-    line-height: 1.5;
+    text-align: center;
+    clear: both;
 }
 footer aside {
     font-size:16px;
