@@ -1,0 +1,121 @@
+@media only screen and (max-width: 375px) {
+.navigation.responsive { 
+    position: relative; 
+}
+.navigation.responsive li { 
+    color: #242a40;
+    background-color: #eee;	
+    display: block;	
+    width: 100%; 
+    margin: 2px 0;	
+    border: 1px solid #ddd; 
+}
+.navigation.responsive li a {	
+    padding: 2px; 
+    text-align: center;	
+    display: block; 
+    text-decoration: none; 
+}
+.navigation.responsive li a:hover { 
+    background-color: #ddd; 
+}
+}
+
+
+* { 
+    box-sizing: border-box;
+}  
+body {
+    font-size: 16px;
+    font-family: 'Quattrocento';
+}
+header, nav, main, footer {
+    max-width: 1100px;
+    margin: 0px auto;
+    align-content: center;
+    overflow: hidden;
+}
+header, footer {    
+    text-align: center;
+    background: #242a40;
+    color: #a1b1be;
+}
+header {
+    width: 100%;
+    min-height: 200px auto;
+}
+header h1 {
+    font-size: 30px;
+    font-family: 'Montserrat';
+    padding:10px;
+}
+header img {
+    float: left;
+    margin: 7px;
+    padding: 7px;  
+}
+header .subheading {
+    display: inline-block
+    font-size: 18px;
+    color:#a1b1be;
+}
+.hamburger { 
+    display: block;
+    position: absolute;
+    top: 2px auto;
+    left: 2px auto; 
+}
+.navigation { 
+    list-style: none;  
+}
+.navigation li { 
+    display: none; 
+}
+main {
+}
+figure {
+    margin: 2px auto;
+}
+.imgmed {
+    display: none;
+}
+.imglarge {
+    display:none;
+}
+h2 {
+    text-align: center;
+}
+h2, h3 {
+    font-size: 23px;
+    color: #242a40;
+    font-family: 'Montserrat';
+}
+h3 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+section.summary {
+    text-align: center;
+    border: 1px solid #242a40;
+}
+section.forecast { 
+    display: none; 
+}
+h4 {
+    font-family: Montserrat;
+    font-size: 20px;
+}
+article {
+    align-content: center;
+    text-align: center;
+    border: 1px solid #242a40;
+    width: 100%;
+    margin: 20px 0 20px 0;
+    line-height: 1.5;
+}
+article p.town-article img {
+    width: 330px;
+}
+footer {
+    clear: both;
+}

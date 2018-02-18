@@ -1,0 +1,106 @@
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+  
+nav button { 
+    display:none; 
+}
+header {    
+    padding: 14px;
+}
+header h1 {
+    font-size: 32px;
+}
+.hamburger { 
+    display: none;	
+}
+.navigation {	
+    background-color: #242a40;	
+    overflow: hidden;	
+    text-align: center;	
+}
+.navigation li { 
+    display: inline-block; 
+    margin-left: .25rem; 
+}
+.navigation a {	
+    display: block;	
+    color: #a1b1be;	
+    padding: 6px;	
+    text-align: center;	
+    text-decoration: none;
+}
+.navigation a:hover {	
+    color: #90a2b3; 
+    background-color: #2f354e;	
+}
+h2 {
+    text-align: left;
+}
+section.franklin {
+    float: left;
+    clear: right;
+}
+section.summary {
+    float: right;
+    display: inline-block;
+    margin-top: 77px;
+}
+section.forecast {
+    display: table;
+    float: left;
+}
+table {
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid #242a40;
+    margin-bottom: 20px;
+}
+th, td {
+    padding: 0 20px 0 20px;
+    
+}
+h5 {
+    font-size: 20px;
+    color: #242a40;
+    font-family: 'Montserrat';
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+h4 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.imgsmall {
+    display: none;
+}    
+.imgmed {
+    display: block;
+}
+.imglarge {
+    display:none;
+}
+article {
+    float: left;
+    text-align: left;
+    clear: right;
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: #242a40;
+    padding: 10px;
+    max-width: 900px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    overflow: hidden;
+}
+article p.town-article img {
+    float: left;
+    padding-right: 10px;
+    width: 340px;
+}
+footer {
+    clear: both;
+}
+}

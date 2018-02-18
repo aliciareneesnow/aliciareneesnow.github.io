@@ -4,3 +4,15 @@
 article p.town-article img { 
       width: 29.333%; 
 }
+.imgsmall {
+    display: none;
+}    
+    
+.imgmed {
+    display: none;
+}
+    
+.imglarge {
+    display:block;
+}
+}
