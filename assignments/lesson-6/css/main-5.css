@@ -1,23 +1,25 @@
 @media only screen and (max-width: 375px) {
 .navigation.responsive { 
-    position: relative; 
+    position: relative;
+    padding: 10px;
 }
 .navigation.responsive li { 
-    color: #242a40;
-    background-color: #eee;	
+    
+    background-color: white;	
     display: block;	
     width: 100%; 
     margin: 2px 0;	
-    border: 1px solid #ddd; 
+    border: 1px solid #242a40; 
 }
 .navigation.responsive li a {	
     padding: 2px; 
     text-align: center;	
+    color: #242a40;
     display: block; 
     text-decoration: none; 
 }
 .navigation.responsive li a:hover { 
-    background-color: #ddd; 
+    background-color: #a1b1be; 
 }
 }
 
@@ -42,7 +44,7 @@ header, footer {
 }
 header {
     width: 100%;
-    min-height: 200px auto;
+    min-height: 200px;
 }
 header h1 {
     font-size: 30px;
@@ -55,15 +57,15 @@ header img {
     padding: 7px;  
 }
 header .subheading {
-    display: inline-block
+    display: inline-block;
     font-size: 18px;
     color:#a1b1be;
 }
 .hamburger { 
     display: block;
     position: absolute;
-    top: 2px auto;
-    left: 2px auto; 
+    top: 2px;
+    left: 2px; 
 }
 .navigation { 
     list-style: none;  
@@ -118,4 +120,5 @@ article p.town-article img {
 }
 footer {
     clear: both;
+    padding: 10px;
 }
