@@ -1,0 +1,125 @@
+@media only screen and (max-width: 375px) {
+.navigation.responsive { 
+    position: relative;
+    padding: 5px;
+}
+.navigation.responsive li { 
+    background-color: white;	
+    display: flex;
+    justify-content: center;
+    width: 100%; 
+    margin: 2px 0;	
+    border: 1px solid #242a40; 
+}
+.navigation.responsive li a {	
+    padding: 2px; 
+    text-align: center;	
+    color: #242a40;
+    text-decoration: none; 
+}
+.navigation.responsive li a:hover { 
+    background-color: #a1b1be; 
+}
+}
+
+
+* { 
+    box-sizing: border-box;
+}  
+body {
+    font-size: 18px;
+    font-family: 'Quattrocento';
+}
+header, nav, main, footer {
+    max-width: 1100px;
+    margin: 0px auto;
+    align-content: center;
+    overflow: hidden;
+}
+header, footer {    
+    text-align: center;
+    background: #242a40;
+    color: #a1b1be;
+}
+header {
+    width: 100%;
+    min-height: 200px;
+}
+header h1 {
+    font-size: 30px;
+    font-family: 'Montserrat';
+}
+header img {
+    float: left;
+    margin-top: 7px;
+    margin-left: 7px;
+    padding-top: 7px;
+    padding-left: 7px;
+}
+header .subheading {
+    display: flex row;
+    font-size: 20px;
+    color:#a1b1be;
+}
+.hamburger { 
+    display: grid;
+    position: absolute;
+    top: 2px;
+    left: 2px; 
+}
+.navigation { 
+    list-style: none;  
+}
+.navigation li { 
+    display: none; 
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+figure {
+    margin: 2px 0 0 0;
+}
+.imgmed {
+    display: none;
+}
+.imglarge {
+    display:none;
+}
+h2 {
+    text-align: center;
+}
+h2, h3 {
+    font-size: 23px;
+    color: #242a40;
+    font-family: 'Montserrat';
+}
+h3 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+section.summary {
+    text-align: center;
+    border: 1px solid #242a40;
+}
+section.forecast { 
+    display: none; 
+}
+h4 {
+    font-family: Montserrat;
+    font-size: 18px;
+}
+article {
+    text-align: center;
+    border: 1px solid #242a40;
+    width: 100%;
+    margin: 20px 0 20px 0;
+    line-height: 1.5;
+}
+article p.town-article img {
+    width: 330px;
+}
+footer {
+    padding: 10px;
+}

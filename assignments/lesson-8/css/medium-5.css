@@ -1,0 +1,91 @@
+@media only screen and (min-width: 375px) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+  
+nav button { 
+    display:none; 
+}
+header {    
+    padding: 14px;
+}
+header h1 {
+    font-size: 32px;
+}
+.hamburger { 
+    display: none;	
+}
+.navigation {	
+    background-color: #242a40;	
+    text-align: center;
+    margin: 2px 0 2px 0;
+}
+.navigation li { 
+    display: inline-flex; 
+}
+.navigation a {		
+    color: #a1b1be;	
+    padding: 6px;	
+    text-align: center;	
+    text-decoration: none;
+}
+.navigation a:hover {	
+    color: #90a2b3; 
+    background-color: #2f354e;	
+}
+h2 {
+    text-align: left;
+}
+section.franklin {
+}
+section.summary {
+    display: box;
+}
+section.forecast {
+    display: table;
+}
+table {
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid #242a40;
+    margin-bottom: 20px;
+}
+th, td {
+    padding: 0 20px 0 20px;
+    
+}
+h5 {
+    font-size: 20px;
+    color: #242a40;
+    font-family: 'Montserrat';
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+h4 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.imgsmall {
+    display: none;
+}    
+.imgmed {
+    display: box;
+}
+.imglarge {
+    display:none;
+}
+article {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    text-align: left;
+    padding: 10px;
+    max-width: 900px;
+}
+article p.town-article img {
+    float: left;
+    padding-right: 10px;
+}
+footer {
+}
+}

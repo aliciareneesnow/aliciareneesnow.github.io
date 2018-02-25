@@ -1,0 +1,103 @@
+@media only screen and (min-width: 376px) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */ 
+header {    
+    flex-wrap: wrap;
+}
+header h1 {
+    font-size: 32px;
+}
+nav button { 
+    display:none; 
+}
+.hamburger { 
+    display: none;	
+}
+.navigation {
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    background-color: #242a40;
+    margin-top: 2px;
+}
+.navigation li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigation a {	
+    padding: 15px 25px 15px 25px;
+    color: #a1b1be;			
+    text-decoration: none;
+}
+.navigation a:hover {	
+    color: #90a2b3; 
+    background-color: #2f354e;	
+}
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+section.franklin {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+.imgsmall {
+    display: none;
+}    
+.imgmed {
+    display: block;
+}
+.imglarge {
+    display:none;
+}
+section.summary{
+    grid-column-start: 3; 
+    grid-column-end: 4; 
+    grid-row-start: 1; 
+    grid-row-end: 1;
+}
+section.forecast {
+    display: table;
+    grid-column-start: 1; 
+    grid-column-end: 4; 
+    grid-row-start: 3; 
+    grid-row-end: 3;
+}
+table {
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid #242a40;
+    margin-bottom: 20px;
+}
+th, td {
+    padding: 5px 20px 5px 20px;
+}
+h5 {
+    font-size: 20px;
+    color: #242a40;
+    font-family: 'Montserrat';
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+h4 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+article {
+    grid-column-start: 1; 
+    grid-column-end: 4; 
+    grid-row-start: 4; 
+    grid-row-end: 4;
+    padding: 10px;
+    max-width: 900px;
+}
+article p.town-article img {
+    width: 340px;
+}
+}
