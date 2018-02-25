@@ -1,46 +1,60 @@
 @media only screen and (min-width: 375px) {
   /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
-  
-nav button { 
-    display:none; 
+.gallerypage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
-header {    
-    padding: 14px;
 }
-header h1 {
-    font-size: 32px;
-}
-.hamburger { 
-    display: none;	
-}
-.navigation {	
-    background-color: #242a40;	
-    text-align: center;
-    margin: 2px 0 2px 0;
-}
-.navigation li { 
-    display: inline-flex; 
-}
-.navigation a {		
-    color: #a1b1be;	
-    padding: 6px;	
-    text-align: center;	
-    text-decoration: none;
-}
-.navigation a:hover {	
-    color: #90a2b3; 
-    background-color: #2f354e;	
+    header {    
+        padding: 14px;
+    }
+    header h1 {
+        font-size: 32px;
+    }
+/*NAVIGATION*/  
+    nav button { 
+        display:none; 
+    }
+    .hamburger { 
+        display: none;	
+    }
+    .navigation {	
+        background-color: #242a40;	
+        text-align: center;
+        margin: 2px 0 2px 0;
+    }
+    .navigation li { 
+        display: inline-flex; 
+    }
+    .navigation a {		
+        color: #a1b1be;	
+        padding: 6px;	
+        text-align: center;	
+        text-decoration: none;
+    }
+    .navigation a:hover {	
+        color: #90a2b3; 
+        background-color: #2f354e;	
+    }
+/*END NAVIGATION*/
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 h2 {
     text-align: left;
 }
 section.franklin {
+    grid-column-start: 1;
+    grid-row-start: 1;
 }
 section.summary {
-    display: box;
+    display: inline-flex;
 }
 section.forecast {
     display: table;
+    grid-column-start: 1;
+    grid-row-start: 2;
 }
 table {
     border-collapse: collapse;
@@ -50,8 +64,7 @@ table, th, td {
     margin-bottom: 20px;
 }
 th, td {
-    padding: 0 20px 0 20px;
-    
+    padding: 0 20px 0 20px;  
 }
 h5 {
     font-size: 20px;
@@ -70,7 +83,7 @@ h4 {
     display: none;
 }    
 .imgmed {
-    display: box;
+    display: inline-flex;
 }
 .imglarge {
     display:none;
@@ -87,5 +100,4 @@ article p.town-article img {
     padding-right: 10px;
 }
 footer {
-}
 }

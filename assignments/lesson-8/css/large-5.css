@@ -8,6 +8,13 @@
     display: none;
 }
 .imglarge {
-    display:box;
+    display:inline-grid;
 }
+figure:hover {
+    box-shadow: 5px 5px 10px gray;
+}
+
+.gallerypage {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
