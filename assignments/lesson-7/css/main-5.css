@@ -4,17 +4,17 @@
     padding: 10px;
 }
 .navigation.responsive li { 
+    
     background-color: white;	
-    display: flex;
-    justify-content: center;
+    display: inline-flex;	
+    width: 100%; 
     margin: 2px 0;	
     border: 1px solid #242a40; 
 }
 .navigation.responsive li a {	
     padding: 2px; 
-    align-items: center;
-    color: #242a40;
-    display: flex;
+    text-align: center;	
+    color: #242a40; 
     text-decoration: none; 
 }
 .navigation.responsive li a:hover { 
@@ -22,56 +22,58 @@
 }
 }
 
-* {
-  box-sizing: border-box;
-}
 
+* { 
+    box-sizing: border-box;
+}  
 body {
-    display: grid;
     font-size: 20px;
     font-family: 'Quattrocento';
 }
 header, nav, main, footer {
-    max-width: 1000px;
-    margin: 0 auto;
+    max-width: 1100px;
+    margin: 0px auto;
+    align-content: center;
+    overflow: hidden;
 }
-header, footer {
-    width: 100%;
+header, footer {    
+    text-align: center;
     background: #242a40;
     color: #a1b1be;
 }
 header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-header img {
-    margin: 5px;
+    width: 100%;
+    min-height: 200px;
 }
 header h1 {
-    margin: 5px;
-    font-size: 24px;
+    font-size: 25px;
     font-family: 'Montserrat';
 }
+header img {
+    float: left;
+    margin: 7px;
+    padding: 7px;  
+}
 header .subheading {
-    margin: 5px;
-    font-size: 22px;
+    display: inline-flex;
+    font-size: 20px;
     color:#a1b1be;
 }
 .hamburger { 
+    display: inline-flex;
     position: absolute;
-    top: 2px;
+    top: 2px;y
     left: 2px; 
 }
 .navigation { 
-    display: none;  
+    list-style: none;  
 }
 .navigation li { 
     display: none; 
 }
 figure {
-    margin: auto;
+    margin: 4px auto;
+    align-content: center;
 }
 .imgmed {
     display: none;
@@ -80,7 +82,7 @@ figure {
     display:none;
 }
 h2 {
-    display: flex;
+    text-align: center;
 }
 h2, h3 {
     font-size: 23px;
@@ -94,14 +96,17 @@ h3 {
 section.summary {
     text-align: center;
     border: 1px solid #242a40;
-    margin-top: 20px;
 }
-section.forecast {
+.sunnyforecast {
+    display: inline-flex;
+    padding: 10px;
+}
+section.forecast { 
     display: none; 
 }
 h4 {
     font-family: Montserrat;
-    font-size: 20px;
+    font-size: 18px;
 }
 article {
     align-content: center;
@@ -112,12 +117,19 @@ article {
     line-height: 1.5;
 }
 article p.town-article img {
-    float: left;
     width: 330px;
 }
 footer {
-    display: flex;
-    align-items: center;
-    align-content: space-around;
-    flex-direction: column
+    padding: 10px;
+}
+
+.gallerypage {
+    display: table;
+    width: 1px;
+}
+.hover {
+    margin:10px;
+}
+img, figcaption {
+    display: table-row;
 }

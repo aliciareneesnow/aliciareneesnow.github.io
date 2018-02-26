@@ -1,21 +1,24 @@
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 64em) {
   /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
   
-article p.town-article img { 
-      width: 29.333%; 
-}
 .imgsmall {
     display: none;
-}    
-    
+} 
 .imgmed {
     display: none;
 }
-    
 .imglarge {
-    display: block;
+    display:inline-grid;
 }
-figure img:hover {
+figure:hover {
     box-shadow: 5px 5px 10px gray;
+}
+
+.gallerypage {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+main {
+    margin: auto;
 }
 }
