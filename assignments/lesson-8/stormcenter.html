@@ -54,7 +54,7 @@
 					               <option value="Tornado"></option>
                             </datalist>
                         </label>
-                        <label><span>Storm Severity:</span><input name="email" type="email" value="" placeholder="Email" required ></label>
+                        <label for="rating">Rating (1 to 10)</label><input type="range" id="rating" value="" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"><span id="ratingvalue"></span><br>
                         <label><span>Storm Region:</span><input type="text" list="stormregion" name="Region">
                             <datalist id="stormregion">
 					               <option value="Select Region" disabled>Select Region</option>
@@ -63,14 +63,12 @@
 					               <option value="Springfield">Springfield</option>
                             </datalist>
                         </label>
-                        
-    
-                        <label><span>Badge Color:</span><input name="phone" type="tel" value="" placeholder="Phone Number" pattern="[0-9]{10,20}" required ></label>
-                        <label><span>Credit Card:</span><input name="credit" type="number" value="" placeholder="Phone Number" pattern="[0-9]{10,20}" required ></label>
-                    </fieldset>
-                    <fieldset>
-                        <legend><span>Additional Information</span></legend>
-                        <label><span>Other Comments:</span><input name="comments" type="text" value="" placeholder="" ></label>
+                        <label><span>User In-Danger Level:</span>
+                                <input type="radio" name="level" value="yes"> Yes<br>
+                                <input type="radio" name="level" value="maybe"> Maybe<br>
+                                <input type="radio" name="level" value="no"> No
+                        </label>
+                        <label><span>Additional Comments:</span><textarea name="comment" form="usrform"></textarea></label>
                     </fieldset>
                     <input type="submit" value="Submit Information" class="submitBtn">
                     <input name="redirect" type="hidden" value="thanks.html">
@@ -85,7 +83,6 @@
 
         <script src="js/hamburger.js"></script>
         <script src="js/currentdate.js"></script>
-        <script src="js/windchill.js"></script>
 
 </body>
 </html>
