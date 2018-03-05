@@ -168,11 +168,12 @@ label span {
     padding-bottom: .2em;
 }
 input.submitBtn {
+    -webkit-appearance: none;
     color: #fff;
     border: solid 1px #111;
     border-radius: 7px;
     width: 40%;
-    margin: .5em 0;
+    margin-bottom: 1.5em; 
     font-size: 1em;
     padding: .6em;
     background: #242a40;

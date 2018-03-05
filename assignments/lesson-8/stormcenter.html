@@ -37,7 +37,7 @@
                 <form action="thanks.html" method="post" enctype="multipart/form-data" name="report" id="storm">
                     <fieldset>
                         <legend><span>Personal Information</span></legend>
-                        <label><span>Full Name:</span><input name="fullname" type="text" pattern="[a-zA-Z -.]{5}" required ></label>
+                        <label><span>Full Name:</span><input name="fullname" type="text" pattern="[a-zA-Z -.]{5,99}" required ></label>
                         <label><span>Email:</span><input name="email" type="email" value="" placeholder=" johndoe@gmail.com" required ></label>
                         <label><span>Phone:</span><input name="phone" type="tel" value="" placeholder=" 0000000000" pattern="[0-9]{10,20}" required ></label>
                         <label><span>Zip Code:</span><input name="zipcode" type="number" value="" placeholder=" 00000" pattern="[0-9]{5}" required ></label>
@@ -54,7 +54,7 @@
 					               <option value="Tornado"></option>
                             </datalist>
                         </label>
-                        <label for="rating">Rating (1 to 10)</label><input type="range" id="rating" value="" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"><span id="ratingvalue"></span><br>
+                        <label for="rating"><span>Storm Severity:</span></label><input type="range" id="rating" value="" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"><span id="ratingvalue"></span><br>
                         <label><span>Storm Region:</span><input type="text" list="stormregion" name="Region">
                             <datalist id="stormregion">
 					               <option value="Select Region" disabled>Select Region</option>
