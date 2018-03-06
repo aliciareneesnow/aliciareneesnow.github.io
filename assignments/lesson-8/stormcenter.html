@@ -34,18 +34,18 @@
                 </ul>		
         </nav>
         
-                <form action="thanks.html" method="post" enctype="multipart/form-data" name="report" id="storm">
+                <form action="thanks.html" enctype="multipart/form-data" name="report" id="storm">
                     <fieldset>
                         <legend><span>Personal Information</span></legend>
-                        <label><span>Full Name:</span><input name="fullname" type="text" pattern="[a-zA-Z -.]{5,99}" required ></label>
+                        <label><span>Full Name:</span><input name="fullname" type="text" value="" placeholder=" First Last" pattern="[a-zA-Z -.]{5,99}" required ></label>
                         <label><span>Email:</span><input name="email" type="email" value="" placeholder=" johndoe@gmail.com" required ></label>
                         <label><span>Phone:</span><input name="phone" type="tel" value="" placeholder=" 0000000000" pattern="[0-9]{10,20}" required ></label>
-                        <label><span>Zip Code:</span><input name="zipcode" type="number" value="" placeholder=" 00000" pattern="[0-9]{5}" required ></label>
+                        <label><span>Zip Code:</span><input name="zipcode" type="number" value="" placeholder=" 00000" required ></label>
                     </fieldset>
                     <fieldset>
                         <legend><span>Storm Information</span></legend>
                         <label><span>Storm Date:</span><input name="stormdate" type="date" required ></label>
-                        <label><span>Storm Type:</span><input type ="text" list="stormtype" name="Storm">
+                        <label><span>Storm Type:</span><input name="stormtype" type ="text" list="stormtype" >
                             <datalist id="stormtype">
 					               <option value="Flash Flood"></option>
 					               <option value="Hail"></option>
@@ -55,20 +55,19 @@
                             </datalist>
                         </label>
                         <label for="rating"><span>Storm Severity:</span></label><input type="range" id="rating" value="" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"><span id="ratingvalue"></span><br>
-                        <label><span>Storm Region:</span><input type="text" list="stormregion" name="Region">
+                        <label><span>Storm Region:</span><input name="region" type="text" list="stormregion" placeholder=" Select Region">
                             <datalist id="stormregion">
-					               <option value="Select Region" disabled>Select Region</option>
-					               <option value="Franklin">Franklin</option>
-					               <option value="Greenville">Greenville</option>
-					               <option value="Springfield">Springfield</option>
+					               <option value="Franklin"></option>
+					               <option value="Greenville"></option>
+					               <option value="Springfield"></option>
                             </datalist>
                         </label>
-                        <label><span>User In-Danger Level:</span>
+                        <label><span>Are you in danger?</span>
                                 <input type="radio" name="level" value="yes"> Yes<br>
                                 <input type="radio" name="level" value="maybe"> Maybe<br>
-                                <input type="radio" name="level" value="no"> No
+                                <input type="radio" name="level" value="no"> No<br>
                         </label>
-                        <label><span>Additional Comments:</span><textarea name="comment" form="usrform"></textarea></label>
+                        <label><span>Additional Comments:</span><textarea name="comment"></textarea></label>
                     </fieldset>
                     <input type="submit" value="Submit Information" class="submitBtn">
                     <input name="redirect" type="hidden" value="thanks.html">
