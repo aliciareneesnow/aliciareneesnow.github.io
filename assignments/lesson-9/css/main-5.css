@@ -1,0 +1,202 @@
+* { 
+    box-sizing: border-box;
+} 
+.logomed {
+    display: none;
+}
+.logolarge {
+    display:none;
+}
+body {
+    font-size: 20px;
+    font-family: 'Quattrocento';
+}
+header, nav, main, footer {
+    max-width: 1100px;
+    margin: 0px auto;
+    align-content: center;
+    overflow: hidden;
+}
+header, footer {    
+    text-align: center;
+    background: #242a40;
+    color: #a1b1be;
+}
+header {
+    width: 100%;
+}
+header h1 {
+    font-size: 1.5em;
+    font-family: 'Montserrat';
+}
+header img {
+    float: left;
+    margin: 7px;
+    padding: 7px;  
+}
+header .subheading {
+    display: inline-flex;
+    font-size: 20px;
+    color:#a1b1be;
+}
+
+/* N A V I G A T I O N */
+.navigation { 
+    list-style: none;  
+}
+.navigation li { 
+    display: none; 
+}
+.navigation.responsive { 
+    position: relative;
+    padding: 10px;
+}
+.navigation.responsive li { 
+    background-color: white;	
+    display: inline-flex;	
+    width: 100%; 
+    margin: 2px 0;	
+    border: 1px solid #242a40; 
+}
+.navigation.responsive li a {	
+    padding: 2px; 
+    text-align: center;	
+    color: #242a40; 
+    text-decoration: none; 
+}
+.navigation.responsive li a:hover { 
+    background-color: #a1b1be; 
+}
+.hamburger { 
+    display: inline-flex;
+    position: absolute;
+    top: 2px;
+    left: 2px; 
+}
+/* E N D  O F  N A V I G A T I O N */
+
+main {
+    padding: 10px;
+}
+figure {
+    margin: 4px auto;
+}
+.imgmed {
+    display: none;
+}
+.imglarge {
+    display:none;
+}
+h2 {
+    text-align: center;
+    margin: 0px;
+}
+h2, h3 {
+    font-size: 23px;
+    color: #242a40;
+    font-family: 'Montserrat';
+}
+h3 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+section.summary {
+    text-align: center;
+    border: 1px solid #242a40;
+}
+.sunnyforecast {
+    display: inline-flex;
+    padding: 10px;
+}
+section.forecast { 
+    display: none; 
+}
+h4 {
+    font-family: Montserrat;
+    font-size: 18px;
+}
+article {
+    align-content: center;
+    text-align: center;
+    border: 1px solid #242a40;
+    width: 100%;
+    margin: 20px 0 20px 0;
+    line-height: 1.5;
+}
+article p.town-article img {
+    width: 330px;
+}
+footer {
+    padding: 10px;
+}
+
+.gallerypage {
+    display: table;
+    width: 1px;
+    grid-column-gap: 30px;
+}
+.hover {
+    margin:10px;
+}
+img, figcaption {
+    display: table-row;
+}
+/* S T O R M  C E N T E R */
+form#storm {
+    max-width: 1100px;
+    margin: 0px auto;
+    align-content: center;
+    overflow: hidden;
+}
+fieldset {
+    border-radius: .8em;
+    margin: 1.5em 0;
+    border: #242a40 solid 1px;
+}
+legend {
+    margin-left: 6%;
+    padding: .5em;
+    border-radius: .4em;
+}
+label {
+    display: block;
+    margin: .5em;
+}
+label span {
+    display: block;
+    padding-top: .9em;
+    padding-bottom: .2em;
+}
+label input {
+    padding: .5em;
+    width: 50%;
+}
+input[type=radio] {
+    width: auto;
+}
+label textarea {
+    width: 50%;
+    padding: .5em;
+}
+input.submitBtn {
+    -webkit-appearance: none;
+    color: #fff;
+    border: solid 1px #111;
+    border-radius: 7px;
+    width: 30%;
+    margin-bottom: 1.5em; 
+    font-size: 1em;
+    padding: .6em;
+    background: #242a40;
+    box-shadow: 4px 4px 10px #666;
+}
+/* E N D  O F  S T O R M  C E N T E R */
+/* I N D E X  H O M E P A G E */
+#towncontainer {
+    padding: 20px;
+    display: none;
+}
+
+
+
+}

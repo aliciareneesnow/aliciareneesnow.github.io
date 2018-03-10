@@ -1,0 +1,35 @@
+@media only screen and (min-width: 64em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+  
+.logosmall {
+    display: none;
+}    
+.logomed {
+    display: none;
+}
+.logolarge {
+    display: inline-grid;
+}
+header h1 {
+        letter-spacing: .2em;
+}
+.imgsmall {
+    display: none;
+} 
+.imgmed {
+    display: none;
+}
+.imglarge {
+    display:inline-grid;
+}
+figure:hover {
+    box-shadow: 5px 5px 10px gray;
+}
+
+.gallerypage {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+main {
+    margin: auto;
+}
+}
