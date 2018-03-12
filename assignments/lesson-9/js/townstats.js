@@ -26,7 +26,7 @@ function populateTownData(jsonObj) {
             myPara1.textContent = '"' + towns[i].motto + '"';
             myPara2.textContent = 'Year Founded: ' + towns[i].yearFounded;
             myPara3.textContent = 'Population: ' + towns[i].currentPopulation;
-            myPara4.textContent = 'Average Rainfall: ' + towns[i].averageRainfall;
+            myPara4.textContent = 'Yearly Rainfall: ' + towns[i].averageRainfall +' inches';
 
             myArticle.appendChild(myH3);
             myArticle.appendChild(myPara1);
