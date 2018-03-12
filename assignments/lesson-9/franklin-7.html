@@ -44,22 +44,24 @@
                     </figure>
             </section>
             <section class="summary">
-                <h3>WEATHER SUMMARY</h3>    
+                <h3>WEATHER SUMMARY</h3>
                     <div class="highlow">
+                    <span id="currentweather"></span>
+                    </div>
                         <p id=high>High: <span id=highT></span>&deg;F</p>  
                         <p id=low>Low: <span id=lowT></span>&deg;F</p>  
-                    </div>
-                <div id="weatherimg"></div>   
-                <div class="conditions">
+                    <picture>
+                        <img id="weatherimg" src="images/sunny-forecast.png">
+                    </picture>
+                    <span id="weatherstring"></span>
+                    <div class="conditions">
                     <p>Precipitation: <span id="precipitation"></span></p> 
-                    <p id=wind>Wind Speed: <span id=windS></span> mph</p>
+                    <p>Wind Speed: <span id=windspeed></span> mph</p>
                 </div> 
                 <div class="windchill">
                     <p>Windchill: <span id="output"></span>&deg;F</p>
                 </div>
-                <div class="currentweather">
-                    <span id="currentweather"></span>
-                </div>
+                
             </section>
             <section class="forecast">
                 <h5>10 DAY FORECAST</h5>
