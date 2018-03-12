@@ -202,7 +202,10 @@ input.submitBtn {
 /* I N D E X  H O M E P A G E */
 #townstats {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+#hometownimg{
+    padding: 25px 25px 0 25px;    
 }
 #townstats div {
     border: 1px solid #242a40;
@@ -211,12 +214,12 @@ input.submitBtn {
     margin: 10px;
 }
 #townstats div span {
-    margin: .5em;
-    font-size: .75em;
+    margin: 0 25px 25px 25px;
+    font-size: 1em;
 }
 .index-article {
     border: 1px solid #242a40;
-    display: grid;
+    display: grid; 
     margin: 10px;
 }
 /* E N D  O F  I N D E X  H O M E P A G E */

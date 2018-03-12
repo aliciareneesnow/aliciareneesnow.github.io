@@ -31,4 +31,7 @@ figure:hover {
 main {
     margin: auto;
 }
+#townstats {
+    grid-template-columns: 1fr 1fr 1fr;
+}
 }

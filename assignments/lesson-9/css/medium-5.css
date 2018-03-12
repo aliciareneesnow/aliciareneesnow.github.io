@@ -134,4 +134,7 @@ article p.town-article img {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+#townstats {
+    grid-template-columns: 1fr 1fr;
+}
 }
