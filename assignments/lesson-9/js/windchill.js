@@ -2,7 +2,7 @@ var high = parseFloat(document.getElementById('highT').innerHTML);
 
 var low = parseFloat(document.getElementById('lowT').innerHTML); 
 
-var s = parseFloat(document.getElementById('windS').innerHTML);
+var s = parseFloat(document.getElementById('windspeed').innerHTML);
    
 var t = (high + low) / 2; 
     

@@ -104,6 +104,10 @@ section.summary {
     text-align: center;
     border: 1px solid #242a40;
 }
+p#summ {
+    padding: 10px;
+    margin: 10px;
+}
 .sunnyforecast {
     display: inline-flex;
     padding: 10px;
