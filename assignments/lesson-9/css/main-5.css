@@ -78,8 +78,9 @@ header .subheading {
 main {
     padding: 10px;
 }
-figure {
-    margin: 4px auto;
+.imgsmall{
+    margin: auto;
+    padding-bottom: 10px;
 }
 .imgmed {
     display: none;
@@ -91,8 +92,8 @@ h2 {
     text-align: center;
     margin: 0px;
 }
-h2, h3 {
-    font-size: 23px;
+h2, h3, {
+    font-size: 24px;
     color: #242a40;
     font-family: 'Montserrat';
 }
@@ -104,31 +105,31 @@ section.summary {
     text-align: center;
     border: 1px solid #242a40;
 }
+#weatherimg {
+    margin: auto;
+}
 p#summ {
     padding: 10px;
     margin: 10px;
-}
-.sunnyforecast {
-    display: inline-flex;
-    padding: 10px;
 }
 section.forecast { 
     display: none; 
 }
 h4 {
+    text-align: center;
     font-family: Montserrat;
     font-size: 18px;
 }
 article {
-    align-content: center;
-    text-align: center;
+    text-align: left;
+    padding: 10px;
     border: 1px solid #242a40;
     width: 100%;
     margin: 20px 0 20px 0;
     line-height: 1.5;
 }
-article p.town-article img {
-    width: 330px;
+.town-article img {
+    margin: auto;
 }
 footer {
     padding: 10px;
@@ -138,7 +139,7 @@ footer {
 .gallerypage {
     display: table;
     width: 1px;
-    grid-column-gap: 30px;
+    grid-column-gap: 10px;
 }
 .hover {
     margin:10px;
@@ -203,6 +204,7 @@ input.submitBtn {
 #townstats {
     display: grid;
     grid-template-columns: 1fr;
+    grid-row-start: 2;
 }
 #hometownimg{
     padding: 25px 25px 0 25px;    
@@ -218,9 +220,16 @@ input.submitBtn {
     font-size: 1em;
 }
 .index-article {
-    border: 1px solid #242a40;
-    display: grid; 
-    margin: 10px;
+    margin: 0px;
+}
+.articleimgsmall{
+    margin: auto;
+}
+.articleimgmed {
+    display: none;
+}
+.articleimglarge {
+    display:none;
 }
 /* E N D  O F  I N D E X  H O M E P A G E */
 

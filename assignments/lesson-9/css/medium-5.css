@@ -50,7 +50,7 @@ header h1 {
 main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 10%;
+    grid-column-gap: 10px;
     margin: 10px;
 }
 h2 {
@@ -68,14 +68,12 @@ section.summary {
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 1; 
-    grid-row-end: 1; 
 }
 section.forecast {
     display: table;
     grid-column-start: 1;
     grid-column-end: 4;
-    grid-row-start: 2; 
-    grid-row-end: 2; 
+    grid-row-start: 2;  
 }
 table {
     border-collapse: collapse;
@@ -89,7 +87,7 @@ th, td {
     
 }
 h5 {
-    font-size: 20px;
+    font-size: 24px;
     color: #242a40;
     font-family: 'Montserrat';
     text-align: left;
@@ -101,6 +99,8 @@ h4 {
     margin-top: 10px;
     margin-bottom: 5px;
 }
+    article {
+    }
 .imgsmall {
     display: none;
 }    
@@ -110,31 +110,34 @@ h4 {
 .imglarge {
     display:none;
 }
-article {
+/* T O W N  A R T I C L E */
+.town-article {
     grid-column-start: 1;
     grid-column-end: 4;
-    grid-row-start: 3; 
-    grid-row-end: 3; 
+    grid-row-start: 3;  
     text-align: left;
-    border-style: solid;
-    border-width: 1.5px;
-    border-color: #242a40;
     padding: 10px;
-    max-width: 926px;
-    margin-bottom: 20px;
     line-height: 1.5;
-    overflow: hidden;
 }
-article p.town-article img {
+.town-article img {
     float: left;
-    padding-right: 10px;
-    width: 340px;
+    padding: 10px 10px 0 0;
 }
+/* E N D  O F  T O W N  A R T I C L E */
 .gallerypage {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 #townstats {
     grid-template-columns: 1fr 1fr;
+}
+.articleimgsmall{
+    display: none;
+}
+.articleimgmed {
+    display: inline-grid;
+}
+.articleimglarge {
+    display:none;
 }
 }

@@ -34,4 +34,14 @@ main {
 #townstats {
     grid-template-columns: 1fr 1fr 1fr;
 }
+.articleimgsmall{
+    display: none;
+}
+.articleimgmed {
+    display: none;
+}
+.articleimglarge {
+    display: grid;
+    margin: auto;
+}
 }
