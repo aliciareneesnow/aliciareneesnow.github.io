@@ -31,6 +31,7 @@ header h1 {
     text-align: center;
 }
 .navigation li { 
+    font-family: 'Montserrat';
     display: inline-flex; 
     margin-left: .25rem; 
 }
@@ -99,8 +100,6 @@ h4 {
     margin-top: 10px;
     margin-bottom: 5px;
 }
-    article {
-    }
 .imgsmall {
     display: none;
 }    

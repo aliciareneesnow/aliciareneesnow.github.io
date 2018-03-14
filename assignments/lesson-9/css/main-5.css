@@ -91,13 +91,14 @@ main {
 h2 {
     text-align: center;
     margin: 0px;
+    font-family: 'Montserrat';
 }
 h2, h3, {
     font-size: 24px;
     color: #242a40;
-    font-family: 'Montserrat';
 }
 h3 {
+    font-family: 'Montserrat';
     padding-left: 5px;
     padding-right: 5px;
 }
@@ -139,13 +140,14 @@ footer {
 .gallerypage {
     display: table;
     width: 1px;
-    grid-column-gap: 10px;
 }
 .hover {
-    margin:10px;
+    margin:5px;
 }
-img, figcaption {
+figure, figcaption {
+    align-content: center;
     display: table-row;
+    margin: 25px;
 }
 /* E N D  O F  G A L L E R Y  P A G E */
 
