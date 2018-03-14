@@ -3,17 +3,26 @@ weatherFranklin.open('GET', 'https://api.wunderground.com/api/512fa2acfaad275a/f
 weatherFranklin.send();
 
 weatherFranklin.onload = function() {
-    var weatherFranklinForecast = JSON.parse(weatherFranklin.responseText);
-    console.log(weatherFranklinForecast);
-    document.getElementById('currentweather').innerHTML = weatherFranklinForecast.forecast.txt_forecast.forecastday["0"].fcttext;
-    document.getElementById('lowT').innerHTML = weatherFranklinForecast.forecast.simpleforecast.forecastday["0"].low.fahrenheit;
-    document.getElementById('highT').innerHTML = weatherFranklinForecast.forecast.simpleforecast.forecastday["0"].high.fahrenheit;
+    var franklinForecast = JSON.parse(weatherFranklin.responseText);
+    console.log(franklinForecast);
+    document.getElementById('currentweather').innerHTML = franklinForecast.forecast.txt_forecast.forecastday["0"].fcttext;
+    document.getElementById('lowT').innerHTML = franklinForecast.forecast.simpleforecast.forecastday["0"].low.fahrenheit;
+    document.getElementById('highT').innerHTML = franklinForecast.forecast.simpleforecast.forecastday["0"].high.fahrenheit;
 }
 
-/*Why aren't these ones working? I seperated them from working ones until I find problem.*/
-document.getElementById('currentT').innerHTML = weatherFranklin.current_observation.temp_f;
-document.getElementById('weatherimg').src = weatherFranklin.current_observation.icon_url.replace('http:', 'https:');;
-document.getElementById('weatherstring').innerHTML = weatherFranklin.current_observation.weather;
-document.getElementById('precipitation').innerHTML = weatherFranklin.current_observation.precip_today_in;
-document.getElementById('windspeed').innerHTML = weatherFranklin.current_observation.wind_mph;
-document.getElementById('windchill').innerHTML = weatherFranklin.current_observation.windchill_f;
+var requestURL = 'https://api.wunderground.com/api/512fa2acfaad275a/forecast/conditions/q/MN/Franklin.json';
+var request = new XMLHttpRequest();
+request.open('GET', requestURL, true);
+request.send();
+request.onload = function () {
+    var franklinWeather = JSON.parse(request.responseText);
+    document.getElementById('currentT').innerHTML = franklinWeather.current_observation.temp_f;
+    document.getElementById('weatherimg').src = franklinWeather.current_observation.icon_url.replace('http:', 'https:');;
+    document.getElementById('weatherstring').innerHTML = franklinWeather.current_observation.weather;
+    document.getElementById('precipitation').innerHTML = franklinWeather.current_observation.precip_today_in;
+    document.getElementById('windspeed').innerHTML = franklinWeather.current_observation.wind_mph;
+    document.getElementById('output').innerHTML = franklinWeather.current_observation.windchill_f;
+}
+
+
+
