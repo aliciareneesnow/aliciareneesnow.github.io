@@ -11,7 +11,7 @@
     display: inline-grid;
 }
 header h1 {
-        letter-spacing: .2em;
+    letter-spacing: .2em;
 }
 .imgsmall {
     display: none;
@@ -39,6 +39,8 @@ main {
 }
 .index-article {
     padding: 0 60px 0 60px;
+    max-width: 1060px;
+    margin: auto;
 }
 .articleimgsmall{
     display: none;

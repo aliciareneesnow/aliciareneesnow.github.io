@@ -57,6 +57,10 @@ main {
 h2 {
     font-size: 28px;
     margin: 2px;
+    letter-spacing: .2em;
+}
+h3 {
+    letter-spacing: .2em;
 }
 section.franklin {
     grid-column-start: 1;
@@ -75,28 +79,29 @@ section.forecast {
     display: table;
     grid-column-start: 1;
     grid-column-end: 4;
-    grid-row-start: 2; 
+    grid-row-start: 2;
+    margin: 25px 0 40px 0;
 }
 table {
     border-collapse: collapse;
     table-layout: fixed;
     width: 100%;
+    text-align: center;
 }
 table, th, td {
     border: 1px solid #242a40;
-    margin-bottom: 20px;
 }
 th, td {
-    padding: 0 20px 0 20px;
-    
+    padding: 5px 20px 5px 20px;   
 }
 h5 {
     font-size: 24px;
     color: #242a40;
     font-family: 'Montserrat';
-    text-align: left;
+    text-align: center;
     margin-top: 20px;
     margin-bottom: 10px;
+    letter-spacing: .2em;
 }
 h4 {
     text-align: center;
