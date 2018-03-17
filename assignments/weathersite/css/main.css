@@ -67,10 +67,11 @@ header .subheading {
 .navigation.responsive li a:hover { 
     background-color: #a1b1be; 
 }
-.active {
+.active {  
     background: radial-gradient(#414e70 0%, #242a40 100%);
 }
 .hamburger { 
+    -webkit-appearance: none;
     display: inline-flex;
     position: absolute;
     top: 2px;
@@ -95,7 +96,7 @@ h2 {
     text-align: center;
     font-family: 'Montserrat';    
 }
-h2, h3, {
+h2, h3 {
     font-size: 24px;
     color: #242a40;
 }
@@ -197,10 +198,10 @@ input.submitBtn {
     color: #fff;
     border: solid 1px #111;
     border-radius: 7px;
-    width: 30%;
+    width: 50%;
     margin-bottom: 1.5em; 
     font-size: 1em;
-    padding: .6em;
+    padding: .4em;
     background: #242a40;
     box-shadow: 4px 4px 10px #666;
 }
