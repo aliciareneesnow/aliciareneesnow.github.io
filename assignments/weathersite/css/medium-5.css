@@ -69,6 +69,7 @@ section.summary {
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 1; 
+    max-height: 584px;
 }
 section.forecast {
     display: table;

@@ -22,11 +22,14 @@ header h1 {
 .imglarge {
     display:inline-grid;
 }
+section.summary {
+    max-height: 552px;
+}
 figure:hover {
     box-shadow: 5px 5px 10px gray;
 }
 .gallerypage {
-    grid-template-columns: 1fr 15r 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 main {
     margin: auto;
@@ -35,7 +38,7 @@ main {
     grid-template-columns: 1fr 1fr 1fr;
 }
 .index-article {
-    padding: 0 50px 0 50px;
+    padding: 0 60px 0 60px;
 }
 .articleimgsmall{
     display: none;
@@ -46,7 +49,7 @@ main {
 .articleimglarge {
     display: grid;
     margin: auto;
-    padding-top: 10px;
+    padding: 20px 0 20px 0;
 }
 p#summ {
     margin: 0 80px 0 80px;
