@@ -137,6 +137,8 @@ h4 {
 }
 .articleimgmed {
     display: inline-grid;
+    margin: auto;
+    padding-top: 10px;
 }
 .articleimglarge {
     display:none;

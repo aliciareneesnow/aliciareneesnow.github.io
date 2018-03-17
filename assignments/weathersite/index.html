@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Waterproof Weather - Accurate Weather For Franklin, Greenville, & Springfield</title>
+        <meta name="description" content="Accurate and weatherproof weather for the cities of Franklin, Greenville and Springfield.">   
+            <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Quattrocento" rel="stylesheet">
+            <link href="css/normalize.css" rel="stylesheet">
+            <link href="css/main-5.css" rel="stylesheet">    
+            <link href="css/medium-5.css" rel="stylesheet">  
+            <link href="css/large-5.css" rel="stylesheet">   
+    </head>
+    
+    <body>
+        <header>
+            <img class=logosmall src="images/logotrial.png" alt="Waterproof Weather">
+            <img class=logomed src="images/trial2.png" alt="Waterproof Weather">
+            <img class=logolarge src="images/largelogo.png" alt="Waterproof Weather">
+            <h1>WATERPROOF WEATHER</h1>
+            <div class="subheading">For an accurate and waterproof forecast when you need it.</div>
+        </header>
+        
+        <nav>
+            <button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
+                <ul class=navigation>
+                   <li class="active"><a href="index.html">Home</a></li>
+                   <li class=""><a href="franklin.html">Franklin</a></li>
+    	           <li class=""><a href="#">Greenville</a></li>
+    	           <li class=""><a href="#">Springfield</a></li>
+    	           <li class=""><a href="stormcenter.html">Storm Center</a></li>
+    	           <li class=""><a href="gallery.html">Gallery</a></li>
+                </ul>		
+        </nav>
+       
+        <main>
+            <article class="index-article">
+                <h3>Eastern States Hit With Cold Front</h3>
+                    The eastern United States and the Midwest are being clobbered with a brutal cold front that will stretch through the week. After an unusually cold Christmas, "more of the country will be dealing with this bitter cold," CNN meteorologist Gene Norman said. "We'll have one arctic blast tonight and another toward the end of the week and into the weekend." Norman said 48 million people were under a wind chill advisory Tuesday night, up from only 30 million people earlier in the day.
+                <br>
+                <img class="articleimgsmall" src="images/winterstorm-small.jpg" alt="Cold Front">
+                <img class="articleimgmed" src="images/winterstorm-medium.jpg" alt="Cold Front">
+                <img class="articleimglarge" src="images/winterstorm-large.jpg" alt="Cold Front">
+            </article>
+            
+            <section id="townstats">
+            <div>
+                <img id=hometownimg src="images/franklin_hometown.jpg" alt="Franklin">
+                <span id="Franklin"></span>
+            </div>
+            <div>
+                <img id=hometownimg src="images/greenville_hometown.jpg" alt="Greenville">
+                <span id="Greenville"></span>
+            </div>
+            <div>
+                <img id=hometownimg src="images/springfield_hometown.jpg" alt="Springfield">
+                <span id="Springfield"></span>
+            </div>
+        </section>
+    </main>
+    
+        <footer>
+            <aside>
+                444 S. Weather Street    |    444-444-4444    |    waterproofweather@franklin.gov
+            </aside>
+            <p class="footer-bar">&copy;2017 All Rights Reserved | Waterproof Weather | <span id="currentdate"></span></p>
+        </footer>
+
+        <script src="js/hamburger.js"></script>
+        <script src="js/currentdate.js"></script>
+        <script src="js/townstats.js"></script>
+
+</body>
+<script>
+var urlString = document.location.href;
+var urlArray = urlString.split('/');
+var pageHREF=urlArray[urlArray.length-1];
+
+if (pageHREF !=="") {
+    var menu = document.querySelectorAll('il#navigation li a');
+    var i;
+    for(i=0; i<menu.length; i++) {
+        var currentURL=(menu[i].getAttribute("href"));
+        menu[i].parentNode.className="";
+        if (currentURL===pageHREF) {
+            menu[i].parentNode.className="active";
+        }
+    }
+}
+</script>
+</html>

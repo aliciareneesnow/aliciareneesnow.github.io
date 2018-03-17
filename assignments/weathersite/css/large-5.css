@@ -1,0 +1,54 @@
+@media only screen and (min-width: 64em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+  
+.logosmall {
+    display: none;
+}    
+.logomed {
+    display: none;
+}
+.logolarge {
+    display: inline-grid;
+}
+header h1 {
+        letter-spacing: .2em;
+}
+.imgsmall {
+    display: none;
+} 
+.imgmed {
+    display: none;
+}
+.imglarge {
+    display:inline-grid;
+}
+figure:hover {
+    box-shadow: 5px 5px 10px gray;
+}
+.gallerypage {
+    grid-template-columns: 1fr 15r 1fr;
+}
+main {
+    margin: auto;
+}
+#townstats {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.index-article {
+    padding: 0 50px 0 50px;
+}
+.articleimgsmall{
+    display: none;
+}
+.articleimgmed {
+    display: none;
+}
+.articleimglarge {
+    display: grid;
+    margin: auto;
+    padding-top: 10px;
+}
+p#summ {
+    margin: 0 80px 0 80px;
+}    
+}
