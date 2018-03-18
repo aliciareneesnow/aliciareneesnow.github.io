@@ -21,7 +21,6 @@ request.onload = function () {
     document.getElementById('weatherstring').innerHTML = franklinWeather.current_observation.weather;
     document.getElementById('precipitation').innerHTML = franklinWeather.current_observation.precip_today_in;
     document.getElementById('windspeed').innerHTML = franklinWeather.current_observation.wind_mph;
-    document.getElementById('output').innerHTML = franklinWeather.current_observation.windchill_f;
 }
 
 

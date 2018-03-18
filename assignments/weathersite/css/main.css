@@ -69,14 +69,14 @@ header .subheading {
 }
 .active {  
     background: radial-gradient(#414e70 0%, #242a40 100%);
+    color: white;
 }
 .hamburger { 
     -webkit-appearance: none;
     display: inline-flex;
     position: absolute;
     top: 2px;
-    left: 2px; 
-    width: 35px;
+    left: 2px;
 }
 /* E N D  O F  N A V I G A T I O N */
 
