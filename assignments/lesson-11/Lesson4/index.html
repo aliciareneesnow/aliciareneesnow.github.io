@@ -7,9 +7,22 @@
 	<script src="js/jquery-2.2.1.min.js"></script>
 	<script>
 	$(function(){
-		// jQuery Code goes here
-
-	})
+        
+        $('.coreValues').prepend("<li><strong>This is brand new !!</strong></li>");
+        
+        $("<li><strong>This is also great !!</strong></li>").appendTo(".coreValues");
+        
+        var nameVal = $('input[name="nameVal"]');
+        
+        function FillEmpty(){
+            if( nameVal.val() == ''){
+                nameVal.val( 'John Doe' );
+            }
+        }
+        
+        $('#ReqAQuoteBtn').click( FillEmpty );
+        
+    })
 	</script>
 </head>
 <body>
