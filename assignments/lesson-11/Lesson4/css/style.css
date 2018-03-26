@@ -277,5 +277,15 @@ body {
 	font-weight: normal;
 	color:inherit;
 }
-
+.pages {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+    font-size: 14px;
+}
+.pages li{
+    flex: 0 0 auto;
+    margin: 8px;
+}
 
