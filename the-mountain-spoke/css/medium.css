@@ -9,10 +9,18 @@ header img {
 header { 
     height: 150px;
 }
+header .subheading {
+    font-size: 1em;
+}
 /* N A V I G A T I O N */
 .navigation { 
     display: none; 
 } 
+nav { 
+    background: #FF8500;
+    clear: left;
+    font-family: 'Questrial', sans-serif;  
+}
 nav ul { 
     height: 10%;
     display: flex;

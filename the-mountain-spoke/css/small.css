@@ -27,14 +27,23 @@ header h1 {
 }
 header .subheading {
     color: #024C69;
-    font-size: 1em;
+    font-size: .8em;
     letter-spacing: .4em;
+    padding-bottom: 10px;
 }
 /* N A V I G A T I O N */
-nav { 
-    background: #FF8500;
-    clear: left;
-    font-family: 'Questrial', sans-serif;  
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    height: 0px; 
+    width: 100%;
+    background: #FF8500; 
+    cursor: pointer;
+    padding: 0;
+
+}
+nav {
+    display: block;
 }
 nav ul { 
     background-color: #FF8500;
