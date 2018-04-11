@@ -43,7 +43,6 @@ nav ul {
 } 
 nav li {
     display: none;
-    justify-content: space-evenly;
 }
 nav a{ 
     text-decoration: none;
