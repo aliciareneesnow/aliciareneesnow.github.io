@@ -36,6 +36,7 @@ nav {
     background: #FF8500;
     clear: left;
     font-family: 'Questrial', sans-serif;  
+    width: 100%;
 }
 nav ul { 
     background-color: #FF8500;
