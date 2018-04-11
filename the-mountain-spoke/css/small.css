@@ -32,8 +32,10 @@ header .subheading {
     padding-bottom: 10px;
 }
 /* N A V I G A T I O N */
-nav {
-    display: block;
+nav { 
+    background: #FF8500;
+    clear: left;
+    font-family: 'Questrial', sans-serif;  
 }
 nav ul { 
     background-color: #FF8500;

@@ -16,11 +16,7 @@ header .subheading {
 .navigation { 
     display: none; 
 } 
-nav { 
-    background: #FF8500;
-    clear: left;
-    font-family: 'Questrial', sans-serif;  
-}
+
 nav ul { 
     height: 10%;
     display: flex;
