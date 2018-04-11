@@ -32,16 +32,6 @@ header .subheading {
     padding-bottom: 10px;
 }
 /* N A V I G A T I O N */
-.navigation {
-    display: flex;
-    justify-content: flex-end;
-    height: 0px; 
-    width: 100%;
-    background: #FF8500; 
-    cursor: pointer;
-    padding: 0;
-
-}
 nav {
     display: block;
 }
@@ -216,6 +206,10 @@ legend {
 .shop {
     text-align: center;
 }
-.accordian {
+#accordion h3{
+    border: 1px solid white;
+    cursor: pointer;
+}
+#accordion.open{
     border: 1px solid white;
 }
