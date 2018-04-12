@@ -7,7 +7,7 @@
     <meta name="description" content="Your one-stop website for mountain biking events, tours, supplies, and repairs. The Mountain Spoke is a favorite online destination for mountain biker enthusiast and outdoor lovers.">   
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Questria" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet"> 
-    <link href="css/small.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">    
     <link href="css/medium.css" rel="stylesheet">  
     <link href="css/large.css" rel="stylesheet">   
 </head>
@@ -33,23 +33,61 @@
     </nav>
 
     <main>
-    <img class="mainPicture" src="images/events-main-photo.jpg" alt="Upcoming Events">    
-    <div class="adventureoptions">  
-    <div id="adventure1">
-        <img src="images/adventuretour-6day.jpg" alt="6 Day Mountain Biking Adventure Tour">
-        <p>Over the course of 6 days, you'll pedal right from the backdoor of the Canvas hotel on over 100k of the singletrack that dreams are made of. Ride along the lakes and across the sweeping granite domes that characterize this unbelievable landscape, while you drink straight from the icy mountain streams and gaze at a night sky clearer than any you've seen before. In between your explorations, relax at the exclusive Canvas hotel, a hidden retreat tucked away in the moors of Norway. This mountain bike tour to the north country will be one to remember. Click here to learn more.</p>
-    </div>
-    <div id="adventure2">
-        <img src="images/adventuretour-easy3hour.jpg" alt="Easy 3 Hour Mountain Biking Adventure Tour">
-        <p>Even though this tour leaves town at the crack of dawn, the magnificent views are worth waking up for! Join us for this memorable sunrise tour, complete with a delicious continental-style breakfast, unparalleled scenic vistas and a fun descent (3500 feet elevation loss!) down into Moab. This tour is perfect for those without a lot of mountain biking experience. That said, all riders need to be comfortable using hand brakes as well as be fit enough to pedal up some rising terrain. Click here to learn more.</p>
-    </div>
-    </div>
+        <img class="mainPicture" src="images/events-main-photo.jpg" alt="Upcoming Events">  
+        
+        <fieldset>
+            <legend><span>Cycle The Continental Divide</span></legend>
+            <span>Mark your calendar for June 23rd and join in the annual Cycle the Continental Divide. This event will follow The Great Divide Mountain Bike Route (GDMBR), crisscrossing the Continental Divide north to south. This route is defined by the word "remote." Its remoteness equates with spectacular terrain and scenery. The entire route is basically dirt-road and mountain-pass riding every day. In total, it has over 200,000 feet of elevation gain. Roughly 80% of it is composed of county, Forest Service (USFS), and Bureau of Land Management (BLM) dirt and gravel roads. The remainder is made up of four-wheel-drive tracks and singletrack trails (10%), and paved roads (10%).
+            <br>
+            <br>
+            Costs: $200 per person ($300 if bike rental needed)
+            <br>
+            <br>
+            Requirements: Must be over 16 years old with a recent physical of health.
+            </span>
+        </fieldset>
+        
+        <form action="youveregistered" enctype="multipart/form-data" name="report" id="contactus">
+                    <fieldset>
+                        <legend><span>Registration</span></legend>
+                        <label><span>Full Name:</span>
+                        <br>
+                        <input name="fullname" type="text" value="" placeholder=" First Last" pattern="[a-zA-Z -.]{5,99}" required ></label>
+                        <br>
+                        <br>
+                        <label><span>Email:</span>
+                        <br>
+                        <input name="email" type="email" value="" placeholder=" johndoe@gmail.com" required ></label>
+                        <br>
+                        <br>
+                        <label><span>Phone:</span>
+                        <br>
+                        <input name="phone" type="tel" value="" placeholder=" 000-000-0000" pattern="[0-9-]{10,20}" required ></label>
+                        <br>
+                        <br>
+                        <label><span>Home State:</span>
+                        <input name="address" type="address" value="" placeholder=" Montana" required ></label>
+                        <br>
+                        <br>
+                        <label><span>Birth Date:</span>
+                        <br>
+                        <input name="date" type="date" value="" placeholder="" required ></label>
+                        <br>
+                        <br>
+                        <label><span>Additional Information:</span>
+                        <br>
+                        <textarea name="comment"></textarea></label>
+                        <br>
+                        <input type="submit" value="Register" class="submitBtn">
+                    </fieldset>
+                    <input name="redirect" type="hidden" value="youveregistered.html">
+                </form>
     </main>
     
   <footer>
      <aside>
         <p> The Mountain Spoke <br>
-            3950 Valley Commons Dr<br>
+            3950 Valley Commons<br>
             Bozeman, MT 59718<br>
             info@mountainspoke.com <br>
             (123)-456-7890

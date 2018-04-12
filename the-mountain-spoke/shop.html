@@ -9,7 +9,10 @@
     <link href="css/normalize.css" rel="stylesheet"> 
     <link href="css/small.css" rel="stylesheet">    
     <link href="css/medium.css" rel="stylesheet">  
-    <link href="css/large.css" rel="stylesheet">   
+    <link href="css/large.css" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 
 <body>
@@ -32,27 +35,46 @@
     </nav>
 
     <main>
-    <img class="mainPicture" src="images/best-selling-bikes.jpg" alt="Best Selling Bikes">    
+    <img class="mainPicture" src="images/best-selling-bikes.jpg" alt="Best Selling Bikes"> 
+    <div id="accordion">
+        <h3>Fuji Nevada 5.0 29" Mountain Bike</h3>
+        <div>
+        <img src="images/adventure-beach-bike.jpg">
+        <p>The Fuji Nevada 5.0 29" mountain bike is a value-packed wonder that makes for a fine introduction to the world of riding off road. The frame is designed around Fuji's A2-SL custom aluminum tubing and a beefy PowerCurve down tube. The frame's S-bend chain stays further reduce frame vibration for more efficient cycling. The SR Suntour suspension fork features 75mm of travel to help soften out rough terrain while the Tektro mechanical disc brakes will keep you in control on the steepest descents no matter the conditions. The Shimano 3x7-speed drivetrain components are rugged and reliable to ensure you never miss a shift.</p>
+        </div>
+        <h3>Nashbar 29" Disc Mountain Bike</h3>
+        <div>
+        <img src="images/bicycle-bike-forest.jpg">
+        <p>Your gateway to the wonderful world of mountain biking awaits with the value-packed Nashbar 29" Disc Mountain Bike. It's built around a TIG-welded, aluminum frame that ensures strength, durability, as well as light weight. Up front a SR Suntour SF16 suspension fork helps smooth out rough terrain with its 100mm of travel. The Shimano 3x8-speed shifters, derailleurs, and cassette ensure crisp, precision gear changes while the 42/32/22T chainrings coupled with an 11-32T 8-speed cassette means you have a gear option for any type of terrain you encounter off-road. The 29x2.1" WTB Nano tires are all-around performers while the alloy wheelset is the epitome of durability. Furthermore, Tektro hydraulic disc brakes provide impressive stopping power no matter the trail/weather conditions.</p>
+        </div>
+        <h3>Breezer Thunder One Single-Speed Mountain Bike</h3>
+        <div>
+        <img src="images/active-adventure-bike.jpg">
+        <p>Meet the Thunder One, Breezer's first ever single-speed mountain bike and your ticket to off-road fun and adventure. This zippy 29er hardtail features Breezer's 6066 aluminum D'Fusion hydroformed tubing, an eccentric bottom bracket shell, and a tapered head tube. While many XC bikes utilize a tapered head tube like the Thunder, the Joe Breeze D'Fusion shaped aluminum tubes that make up the frame are the key to unlocking both trail speed and power. The unique D-shaped profile on the top and down tubes near the head tube intersection and at the top tube/seat tube intersection strengthens the design. Up front is a superb Rock Shox Reba 29 RL suspension fork that sports 100mm of travel, a tapered steerer tube, a 15mm MAxle, and PushLoc Remote technology.</p>  
+        </div>
+        </div>
     
-        <p>Don't see what you're looking for? Come into our shop to find a wide selection of bikes and accessories.</p>
+        <p class="shop">Don't see what you're looking for? Come into our shop to find a wide selection of bikes and accessories.</p>
   </main>
     
   <footer>
-     <aside>
+    <aside>
         <p>The Mountain Spoke <br>
             3950 Valley Commons Drive <br>
             Bozeman, MT 59718<br>
             contact@theurl.com <br>
-            (999)999-9999
-        </p>
+            (999)999-9999</p>
     </aside>
         <p class="footer-bar">&copy;2018 All Rights Reserved  |  The Mountain Spoke  |  <p id="currentdate"></p>
         <br>
         <a href="video.html">Video Overview</a>  |  <a href="resources.html">Resources</a>
   </footer>
-     
-  <script src="js/hamburger.js"></script>
-  <script src="js/currentdate.js"></script>
+    
+    <script>
+    $( "#accordion" ).accordion();
+    </script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/currentdate.js"></script>
 
 </body>
 </html>

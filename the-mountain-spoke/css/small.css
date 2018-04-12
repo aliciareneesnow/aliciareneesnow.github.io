@@ -3,6 +3,7 @@ html {
 }
 body {
     font-family: 'Questrial', sans-serif;
+    font-size: 1.2em;
     color: white;
     max-width: 1020px;
     margin-left: auto;
@@ -109,7 +110,7 @@ main {
 }
 /* F O O T E R */
 footer {
-    background-color: #ff8500;
+    background-color: #FF7700;
     text-align: center;
     border: 1px solid white;
     margin: 40px 1px 20px 1px;
@@ -153,6 +154,7 @@ iframe {
     margin: 0 auto;
     max-width: 100%;
     border-radius: .5em;
+    margin-top: 1.5em;
 }
 /* A D V E N T U R E  T O U R S */
 .adventuretours {
@@ -164,6 +166,9 @@ iframe {
     padding: 8px;
     margin: 5px;
     justify-content: center;
+}
+#advent1 img, #advent2 img, #advent3 img {
+    max-width: 100%;
 }
 /* S E R V I C E S */
 #repairTable {
@@ -184,4 +189,22 @@ td {
     width: 350px;
     padding: 5px;
     font-size: 1.2em;
+}
+/* E V E N T  P A G E */
+legend {
+    margin-left: 6%;
+    padding: .5em;
+    border-radius: .4em;
+    font-size: 1.5em;
+}
+.event {
+    border: 1px solid white;
+    border-radius: .4em;
+    padding: 8px;
+    margin: 5px;
+    justify-content: center;
+}
+/* S H O P */
+.shop {
+    text-align: center;
 }
